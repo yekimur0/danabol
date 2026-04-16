@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/vars.css">
+  <link rel="stylesheet" href="./css/settings.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Личные сообщения — DanabolClub</title>
+</head>
+<body>
+
+  <!-- Хлебные крошки -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Кабинет клиента</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--current">
+          <span>Сообщения</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Личные сообщения -->
+  <section class="account">
+    <div class="container">
+
+      <h1 class="account__title">Кабинет клиента</h1>
+
+      <div class="account__layout">
+
+        <!-- Сайдбар -->
+        <aside class="account__sidebar">
+          <div class="account__sidebar-top">
+            <h2 class="account__sidebar-role">Покупатель</h2>
+          </div>
+
+          <div class="account__balance">
+            <div class="account__balance-inner">
+              <span class="account__balance-label">Ваш баланс</span>
+              <span class="account__balance-value">0 ₽</span>
+            </div>
+          </div>
+
+          <div class="account__stats">
+            <div class="account__stat">
+              <span class="account__stat-label">Регистрация</span>
+              <span class="account__stat-value">16.03.2026</span>
+            </div>
+            <div class="account__stat">
+              <span class="account__stat-label">Успешных заказов</span>
+              <span class="account__stat-value">0</span>
+            </div>
+            <div class="account__stat">
+              <span class="account__stat-label">Общая сумма</span>
+              <span class="account__stat-value">0</span>
+            </div>
+          </div>
+
+          <button class="account__telegram-btn">Привязать свой Telegram</button>
+        </aside>
+
+        <!-- Основной контент -->
+        <div class="account__content">
+          <div class="account__content-header">
+            <h2 class="account__content-title">Личные сообщения</h2>
+            <a href="index.html" class="account__logout">
+              Назад
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5H10M10 5L6.5 1.5M10 5L6.5 8.5" stroke="#5A7085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Список сообщений -->
+          <div class="messages">
+
+            <div class="messages__item">
+              <div class="messages__header">
+                <span class="messages__author">Вован</span>
+                <span class="messages__time">13:06 05.03.2026</span>
+              </div>
+              <p class="messages__text">Я кушал. Вчера как раз анализы сдал. Колю энку по 1,5 куб раз в 5 дней и мастерон. Ем по одной табле анастрогена через день. На анализах тестостерон в 4 раза выше верхней границы нормы, эстроген в референсных значениях, чуть выше среднего.</p>
+            </div>
+
+            <div class="messages__item">
+              <div class="messages__header">
+                <span class="messages__author">Анвтолий</span>
+                <span class="messages__time">13:06 05.03.2026</span>
+              </div>
+              <p class="messages__text">Я кушал. Вчера как раз анализы сдал. Колю энку по 1,5 куб раз в 5 дней и мастерон. Ем по одной табле анастрогена через день. На анализах тестостерон в 4 раза выше верхней границы нормы, эстроген в референсных значениях, чуть выше среднего.</p>
+            </div>
+
+          </div>
+
+          <!-- Форма отправки -->
+          <form class="messages__form" action="#" method="post">
+            <textarea
+              class="messages__textarea"
+              name="message"
+              placeholder="Введите текст сообщения..."
+            ></textarea>
+            <div class="messages__actions">
+              <button type="button" class="messages__attach" aria-label="Прикрепить файл">
+               <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.1528 17.1339C12.1528 17.1339 17.8096 11.477 19.2238 10.0628C20.638 8.64857 21.3451 5.11302 18.8702 2.63817C16.3953 0.163296 12.8598 0.870401 11.4456 2.28462C10.0314 3.69882 2.60679 11.1235 1.89968 11.8306C1.19257 12.5377 0.131914 15.0125 2.25323 17.1339C4.37455 19.2552 6.84945 18.1945 7.55655 17.4874C8.26365 16.7803 16.0418 9.00212 16.7489 8.29502C17.4561 7.58792 17.8096 5.82017 16.7489 4.75947C15.6883 3.69882 13.9205 4.05237 13.2134 4.75947C12.5063 5.46662 6.4959 11.477 6.4959 11.477" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button type="submit" class="messages__send">Отправить</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

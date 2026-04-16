@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/vars.css">
+  <link rel="stylesheet" href="./css/settings.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Учетная запись — DanabolClub</title>
+</head>
+<body>
+
+  <!-- Хлебные крошки -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Кабинет клиента</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--current">
+          <span>Учетная запись</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Учетная запись -->
+  <section class="account">
+    <div class="container">
+
+      <h1 class="account__title">Кабинет клиента</h1>
+
+      <div class="account__layout">
+
+        <!-- Сайдбар -->
+        <aside class="account__sidebar">
+          <div class="account__sidebar-top">
+            <h2 class="account__sidebar-role">Покупатель</h2>
+          </div>
+
+          <div class="account__balance">
+            <div class="account__balance-inner">
+              <span class="account__balance-label">Ваш баланс</span>
+              <span class="account__balance-value">0 ₽</span>
+            </div>
+          </div>
+
+          <div class="account__stats">
+            <div class="account__stat">
+              <span class="account__stat-label">Регистрация</span>
+              <span class="account__stat-value">16.03.2026</span>
+            </div>
+            <div class="account__stat">
+              <span class="account__stat-label">Успешных заказов</span>
+              <span class="account__stat-value">0</span>
+            </div>
+            <div class="account__stat">
+              <span class="account__stat-label">Общая сумма</span>
+              <span class="account__stat-value">0</span>
+            </div>
+          </div>
+
+          <button class="account__telegram-btn">Привязать свой Telegram</button>
+        </aside>
+
+        <!-- Основной контент -->
+        <div class="account__content">
+          <div class="account__content-header">
+            <h2 class="account__content-title">Редактирования</h2>
+            <a href="index.html" class="account__logout">
+              Назад
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5H10M10 5L6.5 1.5M10 5L6.5 8.5" stroke="#5A7085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Форма редактирования -->
+          <form class="account__form" action="#" method="post">
+            <div class="account__form-grid">
+
+              <div class="account__field">
+                <label class="account__field-label" for="email">E-mail</label>
+                <input
+                  class="account__field-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Введите Ваш E-mail"
+                >
+              </div>
+
+              <div class="account__field">
+                <label class="account__field-label" for="lastname">Фамилия</label>
+                <input
+                  class="account__field-input"
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  placeholder="Введите Вашу фамилию"
+                >
+              </div>
+
+              <div class="account__field">
+                <label class="account__field-label" for="firstname">Имя</label>
+                <input
+                  class="account__field-input"
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="Введите Ваше имя"
+                >
+              </div>
+
+              <div class="account__field">
+                <label class="account__field-label" for="telegram">Telegram</label>
+                <input
+                  class="account__field-input"
+                  type="text"
+                  id="telegram"
+                  name="telegram"
+                  placeholder="Введите Ваш Telegram"
+                >
+              </div>
+
+            </div>
+
+            <button type="submit" class="account__submit-btn">Применить</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

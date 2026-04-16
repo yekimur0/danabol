@@ -1,0 +1,50 @@
+@import './components/account.css';
+
+
+/* ===== BREADCRUMBS ===== */
+.breadcrumbs {
+  padding: 14px 0;
+  background-color: #fff;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--font-family);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+}
+
+.breadcrumbs__item::after {
+  content: '/';
+  color: #000;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__item--current span {
+  color: #5a7085;
+}
+
+.breadcrumbs__link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbs__link:hover {
+  color: #5a7085;
+}

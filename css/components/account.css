@@ -1,0 +1,623 @@
+
+
+
+/* ===== ACCOUNT SECTION ===== */
+.account {
+  padding: 40px 0 60px;
+}
+
+.account__title {
+  font-size: 33px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #000;
+  margin: 0 0 28px;
+  line-height: 1.2;
+}
+
+.account__layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+
+/* ===== SIDEBAR ===== */
+.account__sidebar {
+  flex-shrink: 0;
+  max-width: 350px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 100px 0 #ececec;
+  border-radius: 35px;
+  padding: 30px 30px;
+}
+
+.account__sidebar-top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.account__sidebar-role {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #000;
+  margin: 0;
+}
+
+.account__balance {
+  background: rgba(142, 192, 237, 0.1);
+  padding: 18px 30px;
+  margin-top: 40px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.account__balance-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.account__balance-label {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: #4e5357;
+}
+
+.account__balance-value {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #000;
+}
+
+.account__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.account__stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.account__stat:last-child {
+  border-bottom: none;
+}
+
+.account__stat-label {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: #6a6a6a;
+}
+
+.account__stat-value {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #2d4e6a;
+}
+
+.account__telegram-btn {
+  display: block;
+  padding: 16px;
+  background: #8ec0ed;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.2s;
+  display: flex;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 28px;
+
+}
+
+.account__telegram-btn:hover {
+  background-color: #6aabdf;
+}
+
+
+/* ===== CONTENT ===== */
+.account__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.account__content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.account__content-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #000;
+  margin: 0;
+}
+
+.account__logout {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #5a7085;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.account__logout:hover {
+  color: #2d4e6a;
+}
+
+.account__logout svg path {
+  transition: stroke 0.2s;
+}
+
+.account__logout:hover svg path {
+  stroke: #2d4e6a;
+}
+
+
+/* ===== CARDS GRID ===== */
+.account__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  gap: 17px 20px;
+}
+
+.account__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 31px 20px 20px 20px;
+  background-color: #fff;
+  text-decoration: none;
+  gap: 0;
+  transition: background-color 0.2s;
+  position: relative;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+}
+
+.account__card:hover {
+  background-color: #8ec0ed;
+}
+
+.account__card--active {
+  background: #8ec1ed3b;
+
+}
+
+.account__card-icon {
+
+  width: 60px;
+  height: 60px;
+  background-color: #8ec0ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 50px 0 rgba(142, 192, 237, 0.5);
+  border-radius: 10px;
+}
+
+.account__card--active .account__card-icon {
+  background-color: #6aabdf;
+}
+
+.account__card:hover .account__card-icon {
+  background-color: #6aabdf;
+}
+
+.account__card-text {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #2d4e6a;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 13px;
+}
+
+
+/* ===== FORM (Учетная запись) ===== */
+.account__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.account__form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 348px);
+  gap: 24px 33px;
+}
+
+.account__field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account__field-label {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #2d4e6a;
+}
+
+.account__field-input {
+  width: 100%;
+  height: 55px;
+  padding: 18px;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: #000;
+  transition: background-color 0.2s;
+  border-radius: 55px
+}
+
+.account__field-input::placeholder {
+  color: #aaa;
+}
+
+.account__field-input:focus {
+  background-color: #eaeaea;
+}
+
+.account__submit-btn {
+  max-width: 255px;
+  box-shadow: 0 4px 50px 0 rgba(142, 192, 237, 0.5);
+  background: #8ec1ed71;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #3a81c1;
+  transition: background-color 0.2s, color 0.2s;
+  padding: 18px ;
+  border-radius: 55px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.account__submit-btn:hover {
+  background-color: #6aabdf;
+  color: #fff;
+}
+
+
+
+
+
+/* ===== MESSAGES ===== */
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages__item {
+  padding: 20px 0;
+
+}
+
+.messages__item:not(:last-child) {
+  border-bottom: 1px solid #ececec;
+}
+
+.messages__item:first-child {
+  padding-top: 0;
+}
+
+.messages__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.messages__author {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #000;
+  line-height: 21px;
+}
+
+.messages__time {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: #000;
+  line-height: 18.2px;
+  opacity: 0.4;
+}
+
+.messages__text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: #000;
+  line-height: 21px;
+  margin: 0;
+}
+
+/* Форма */
+.messages__form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.messages__textarea {
+  width: 100%;
+  height: 88px;
+  padding: 23px 33px;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  resize: none;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: #000;
+  transition: background-color 0.2s;
+}
+
+.messages__textarea::placeholder {
+  color: #aaa;
+}
+
+.messages__textarea:focus {
+  background-color: #eaeaea;
+}
+
+.messages__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.messages__attach {
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #8ec0ed;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.messages__attach:hover {
+  background-color: #6aabdf;
+}
+
+.messages__send {
+  width: 255px;
+  height: 55px;
+  border-radius: 55px;
+  background-color: #8ec1ed3d;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #3a81c1;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.messages__send:hover {
+  background-color: #6aabdf;
+  color: #fff;
+}
+
+
+@media(max-width: 1200px) {
+  .account__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 767px) {
+  .account__layout {
+    flex-direction: column;
+  }
+  .account__sidebar {
+    max-width: 100%;
+    width: 100%;
+  }
+  .account__content {
+    width: 100%;
+  }
+
+  .account__form-grid  {
+    grid-template-columns: 1fr;
+  }
+  .account__submit-btn {
+    max-width: 100%;
+  }
+  .account__sidebar {
+    padding: 30px 10px;
+  }
+}
+
+
+/* ===== ORDERS TABLE ===== */
+.orders__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.orders__table col:nth-child(1) { width: 106px; }
+.orders__table col:nth-child(2) { width: 128px; }
+.orders__table col:nth-child(3) { width: 115px; }
+.orders__table col:nth-child(4) { width: 141px; }
+.orders__table col:nth-child(5) { width: 137px; }
+.orders__table col:nth-child(6) { width: 104px; }
+
+.orders__head-row {
+  background-color: rgba(142, 192, 237, 0.1);
+  border-radius: 10px 10px 0 0;
+}
+
+/* Только горизонтальные бордеры (без вертикальных между колонками) */
+.orders__th,
+.orders__td {
+  padding: 15px 0;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  text-align: left;
+  white-space: nowrap;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+/* Внешние левый и правый бордеры */
+.orders__th:first-child,
+.orders__td:first-child {
+  border-left: 1px solid #ececec;
+  padding-left: 32px;
+}
+
+.orders__th:last-child,
+.orders__td:last-child {
+  border-right: 1px solid #ececec;
+}
+
+.orders__row:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.orders__th {
+  color: #3a81c1;
+}
+
+.orders__td {
+  color: #6a6a6a;
+}
+
+.orders__td--paid {
+  color: #59c670;
+}
+
+.orders__td--unpaid {
+  color: #e54548;
+}
+
+.orders__actions {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.orders__action-view,
+.orders__action-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  transition: opacity 0.2s;
+}
+
+.orders__action-view:hover,
+.orders__action-delete:hover {
+  opacity: 0.7;
+}
+
+/* Пустое состояние */
+.orders__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 265px;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+}
+
+.orders__empty-icon {
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  background-color: rgba(142, 192, 237, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orders__empty-text {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: #4e5357;
+  margin: 0;
+}
+
+.orders__empty-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 173px;
+  height: 55px;
+  background-color: #e68c33;
+  border-radius: 55px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.orders__empty-btn:hover {
+  background-color: #d47a20;
+}
+
+
+@media(max-width: 767px) {
+  .orders {
+    overflow: auto;
+  }
+}

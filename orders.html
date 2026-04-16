@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/vars.css">
+  <link rel="stylesheet" href="./css/settings.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Мои заказы — DanabolClub</title>
+</head>
+<body>
+
+  <!-- Хлебные крошки -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Кабинет клиента</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--current">
+          <span>Мои заказы</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Мои заказы -->
+  <section class="account">
+    <div class="container">
+
+      <h1 class="account__title">Кабинет клиента</h1>
+
+      <div class="account__layout">
+
+        <!-- Сайдбар -->
+        <aside class="account__sidebar">
+          <div class="account__sidebar-top">
+            <h2 class="account__sidebar-role">Покупатель</h2>
+          </div>
+
+          <div class="account__balance">
+            <div class="account__balance-inner">
+              <span class="account__balance-label">Ваш баланс</span>
+              <span class="account__balance-value">1 500 ₽</span>
+            </div>
+          </div>
+
+          <div class="account__stats">
+            <div class="account__stat">
+              <span class="account__stat-label">Регистрация</span>
+              <span class="account__stat-value">16.03.2026</span>
+            </div>
+            <div class="account__stat">
+              <span class="account__stat-label">Успешных заказов</span>
+              <span class="account__stat-value">2</span>
+            </div>
+            <div class="account__stat">
+              <span class="account__stat-label">Общая сумма</span>
+              <span class="account__stat-value">1 500 ₽</span>
+            </div>
+          </div>
+
+          <button class="account__telegram-btn">Привязать свой Telegram</button>
+        </aside>
+
+        <!-- Основной контент -->
+        <div class="account__content">
+          <div class="account__content-header">
+            <h2 class="account__content-title">Мои заказы</h2>
+            <a href="index.html" class="account__logout">
+              Назад
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5H10M10 5L6.5 1.5M10 5L6.5 8.5" stroke="#5A7085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Таблица заказов -->
+          <div class="orders">
+            <table class="orders__table">
+              <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+              </colgroup>
+              <thead>
+                <tr class="orders__head-row">
+                  <th class="orders__th">Номер</th>
+                  <th class="orders__th">Статус</th>
+                  <th class="orders__th">Стоимость</th>
+                  <th class="orders__th">Доставка</th>
+                  <th class="orders__th">Дата создания</th>
+                  <th class="orders__th">Действия</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="orders__row">
+                  <td class="orders__td">125</td>
+                  <td class="orders__td orders__td--paid">Оплачен</td>
+                  <td class="orders__td">1 500 ₽</td>
+                  <td class="orders__td">Почта России</td>
+                  <td class="orders__td">5.03.2026</td>
+                  <td class="orders__td">
+                    <div class="orders__actions">
+                      <a href="#" class="orders__action-view" title="Просмотр">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.33331L14.3333 4.48715L12 6.99998" stroke="#A3B2C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.332 4.66669H5.66743C3.3731 4.66669 1.42466 6.54015 1.33525 8.83335C1.24074 11.2566 3.243 13.3334 5.66743 13.3334H11.3326" stroke="#A3B2C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      </a>
+                      <button class="orders__action-delete" title="Удалить">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 2L13 13M13 2L2 13" stroke="#E54548" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="orders__row">
+                  <td class="orders__td">126</td>
+                  <td class="orders__td orders__td--paid">Оплачен</td>
+                  <td class="orders__td">1 500 ₽</td>
+                  <td class="orders__td">Почта России</td>
+                  <td class="orders__td">5.03.2026</td>
+                  <td class="orders__td">
+                    <div class="orders__actions">
+                      <a href="#" class="orders__action-view" title="Просмотр">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2.33331L14.3333 4.48715L12 6.99998" stroke="#A3B2C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M13.332 4.66669H5.66743C3.3731 4.66669 1.42466 6.54015 1.33525 8.83335C1.24074 11.2566 3.243 13.3334 5.66743 13.3334H11.3326" stroke="#A3B2C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <button class="orders__action-delete" title="Удалить">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 2L13 13M13 2L2 13" stroke="#E54548" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="orders__row">
+                  <td class="orders__td">127</td>
+                  <td class="orders__td orders__td--unpaid">Не оплачен</td>
+                  <td class="orders__td">1 500 ₽</td>
+                  <td class="orders__td">Почта России</td>
+                  <td class="orders__td">5.03.2026</td>
+                  <td class="orders__td">
+                    <div class="orders__actions">
+                      <a href="#" class="orders__action-view" title="Просмотр">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2.33331L14.3333 4.48715L12 6.99998" stroke="#A3B2C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M13.332 4.66669H5.66743C3.3731 4.66669 1.42466 6.54015 1.33525 8.83335C1.24074 11.2566 3.243 13.3334 5.66743 13.3334H11.3326" stroke="#A3B2C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <button class="orders__action-delete" title="Удалить">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 2L13 13M13 2L2 13" stroke="#E54548" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Пустое состояние (нет заказов) -->
+          <!-- Раскомментировать и убрать таблицу если заказов нет -->
+
+          <div class="orders__empty" style="margin-top: 40px;">
+            <div class="orders__empty-icon">
+              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 4H5L7 18H22L25 8H9" stroke="#8ec0ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="10" cy="22" r="2" fill="#8ec0ed"/>
+                <circle cx="20" cy="22" r="2" fill="#8ec0ed"/>
+              </svg>
+            </div>
+            <p class="orders__empty-text">Вы еще не совершали покупок!</p>
+            <a href="#" class="orders__empty-btn">В магазин</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
