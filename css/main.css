@@ -1,5 +1,5 @@
-@import './components/account.css';
-
+@import "./components/account.css";
+@import "./components/checkout.css";
 
 /* ===== BREADCRUMBS ===== */
 .breadcrumbs {
@@ -27,7 +27,7 @@
 }
 
 .breadcrumbs__item::after {
-  content: '/';
+  content: "/";
   color: #000;
 }
 

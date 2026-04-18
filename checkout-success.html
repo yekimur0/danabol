@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/vars.css" />
+    <link rel="stylesheet" href="./css/settings.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Заказ принят — DanabolClub</title>
+  </head>
+  <body>
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Оформление заказа</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
+            <span>Заказ принят</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Успешный заказ -->
+    <section class="checkout-success">
+      <div class="container">
+        <h1 class="checkout-success__title">Ваш заказ принят!</h1>
+
+        <div class="order-card">
+          <div class="order-card__header">
+            <h2 class="order-card__number">Заказ №54554</h2>
+          </div>
+
+          <div class="order-card__content">
+            <!-- Детали заказа (Аккордеон) -->
+            <div class="order-accordion">
+              <button class="order-accordion__trigger">
+                <span class="order-accordion__title">Детали заказа</span>
+                <div class="order-accordion__right">
+                  <span class="order-accordion__count">4 шт</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1L6 6L11 1"
+                      stroke="#2D4E6A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div class="order-accordion__content">
+                <div class="order-items">
+                  <div class="order-item">
+                    <div class="order-item__image">
+                      <img src="./img/gensant.jpg" alt="Генсанат-100" />
+                    </div>
+                    <div class="order-item__info">
+                      <h3 class="order-item__name">
+                        Генсанат-100 Росфарм 10ml|100mg Флакон
+                      </h3>
+                      <span class="order-item__count">4 шт</span>
+                    </div>
+                    <div class="order-item__prices">
+                      <span class="order-item__price-unit">1 500 ₽</span>
+                      <span class="order-item__price-total">6 000 ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-summary">
+                  <div class="order-summary__row">
+                    <span>Сумма</span>
+                    <span>6 000 ₽</span>
+                  </div>
+                  <div class="order-summary__row">
+                    <span>Страховка (1%)</span>
+                    <span>35 ₽</span>
+                  </div>
+                  <div class="order-summary__row">
+                    <span>Почта России</span>
+                    <span>1 000 ₽</span>
+                  </div>
+                  <div class="order-summary__total">
+                    <span>Итого к оплате</span>
+                    <span>7 035 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Адрес доставки (Аккордеон) -->
+            <div class="order-accordion order-accordion--address">
+              <button class="order-accordion__trigger">
+                <span class="order-accordion__title">Адрес доставки:</span>
+                <svg
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L6 6L11 1"
+                    stroke="#2D4E6A"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <div class="order-accordion__content">
+                <div class="order-address">
+                  <p class="order-address__name">Василий Иванов</p>
+                  <p class="order-address__text">
+                    68567, г. Хабаровск, ул. Муравьево-Амурская 29
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="order-card__actions">
+              <a href="#" class="order-card__btn-tg">Оплатить в Telegram</a>
+              <a href="index.html" class="order-card__btn-next">Продолжить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

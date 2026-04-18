@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/vars.css" />
+    <link rel="stylesheet" href="./css/settings.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Мои заказы — DanabolClub</title>
+  </head>
+  <body>
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">Кабинет клиента</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
+            <span>Мои заказы</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Мои заказы -->
+    <section class="account account-orders">
+      <div class="container">
+        <h1 class="account__title">Кабинет клиента</h1>
+
+        <div class="account__layout">
+          <!-- Сайдбар -->
+          <aside class="account__sidebar">
+            <div class="account__sidebar-top">
+              <h2 class="account__sidebar-role">Покупатель</h2>
+            </div>
+
+            <div class="account__balance">
+              <div class="account__balance-inner">
+                <span class="account__balance-label">Ваш баланс</span>
+                <span class="account__balance-value">1 500 ₽</span>
+              </div>
+            </div>
+
+            <div class="account__stats">
+              <div class="account__stat">
+                <span class="account__stat-label">Регистрация</span>
+                <span class="account__stat-value">16.03.2026</span>
+              </div>
+              <div class="account__stat">
+                <span class="account__stat-label">Успешных заказов</span>
+                <span class="account__stat-value">2</span>
+              </div>
+              <div class="account__stat">
+                <span class="account__stat-label">Общая сумма</span>
+                <span class="account__stat-value">1 500 ₽</span>
+              </div>
+            </div>
+
+            <button class="account__telegram-btn">
+              Привязать свой Telegram
+            </button>
+          </aside>
+
+          <!-- Основной контент -->
+          <div class="account__content">
+            <div class="account__content-header">
+              <h2 class="account__content-title">Транзакции</h2>
+              <a href="index.html" class="account__logout">
+                Назад
+                <svg
+                  width="11"
+                  height="10"
+                  viewBox="0 0 11 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 5H10M10 5L6.5 1.5M10 5L6.5 8.5"
+                    stroke="#5A7085"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="transactions__wrapper">
+              <div class="transactions__top">
+                <div class="transactions__left">
+                  <div class="transactions__icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 8.5C17.5228 8.5 22 7.15685 22 5.5C22 3.84315 17.5228 2.5 12 2.5C6.47715 2.5 2 3.84315 2 5.5C2 7.15685 6.47715 8.5 12 8.5Z"
+                        stroke="#8EC0ED"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.38545 7.75C3.30939 8.2997 2 9.104 2 10C2 11.6568 6.47715 13 12 13C17.5229 13 22 11.6568 22 10C22 9.104 20.6906 8.2997 18.6145 7.75C16.8517 8.21675 14.5361 8.5 12 8.5C9.4639 8.5 7.14825 8.21675 5.38545 7.75Z"
+                        stroke="#8EC0ED"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.38545 12.25C3.30939 12.7997 2 13.604 2 14.5C2 16.1568 6.47715 17.5 12 17.5C17.5229 17.5 22 16.1568 22 14.5C22 13.604 20.6906 12.7997 18.6145 12.25"
+                        stroke="#8EC0ED"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.38545 16.75C3.30939 17.2997 2 18.104 2 19C2 20.6568 6.47715 22 12 22C17.5229 22 22 20.6568 22 19C22 18.104 20.6906 17.2997 18.6145 16.75"
+                        stroke="#8EC0ED"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="transactions__text">
+                    <p class="transactions__text-title">Пополнение баланса</p>
+                    <span class="transactions__text-subtitle"
+                      >Мгновенное зачисление средств</span
+                    >
+                  </div>
+                </div>
+                <button class="transactions__btn">Пополнить баланс +</button>
+              </div>
+
+              <div class="transactions__empty">
+                <div class="transactions__empty-icon">
+                  <svg
+                    width="65"
+                    height="65"
+                    viewBox="0 0 65 65"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="65"
+                      height="65"
+                      rx="32.5"
+                      fill="black"
+                      fill-opacity="0.05"
+                    />
+                    <rect
+                      x="26.3789"
+                      y="22.9246"
+                      width="23.4722"
+                      height="3.61111"
+                      transform="rotate(45 26.3789 22.9246)"
+                      fill="black"
+                    />
+                    <path
+                      d="M23.4706 40.0696L33.4011 29.7917L36.1095 32.5L26.024 42.6231L23.4706 40.0696Z"
+                      fill="black"
+                    />
+                    <rect
+                      x="36.2383"
+                      y="27.3024"
+                      width="5.41667"
+                      height="3.61111"
+                      transform="rotate(-45 36.2383 27.3024)"
+                      fill="#E68C33"
+                    />
+                  </svg>
+                </div>
+                <p class="transactions__empty-text">
+                  У Вас не было транзакций!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Модальное окно пополнения -->
+    <div class="modal" id="modal-deposit">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Закрыть">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="24"
+              height="24"
+              rx="12"
+              fill="black"
+              fill-opacity="0.05"
+            />
+            <path
+              d="M15 9L9 15M9 9L15 15"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <h2 class="modal__title">Пополнение баланса</h2>
+
+        <div class="modal__info">
+          <div class="modal__info-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 8.5C17.5228 8.5 22 7.15685 22 5.5C22 3.84315 17.5228 2.5 12 2.5C6.47715 2.5 2 3.84315 2 5.5C2 7.15685 6.47715 8.5 12 8.5Z"
+                stroke="#8EC0ED"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.38545 7.75C3.30939 8.2997 2 9.104 2 10C2 11.6568 6.47715 13 12 13C17.5229 13 22 11.6568 22 10C22 9.104 20.6906 8.2997 18.6145 7.75C16.8517 8.21675 14.5361 8.5 12 8.5C9.4639 8.5 7.14825 8.21675 5.38545 7.75Z"
+                stroke="#8EC0ED"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.38545 12.25C3.30939 12.7997 2 13.604 2 14.5C2 16.1568 6.47715 17.5 12 17.5C17.5229 17.5 22 16.1568 22 14.5C22 13.604 20.6906 12.7997 18.6145 12.25"
+                stroke="#8EC0ED"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.38545 16.75C3.30939 17.2997 2 18.104 2 19C2 20.6568 6.47715 22 12 22C17.5229 22 22 20.6568 22 19C22 18.104 20.6906 17.2997 18.6145 16.75"
+                stroke="#8EC0ED"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="modal__info-text">
+            Пополнение баланса можно запустив телеграм-бот
+            <a href="https://t.me/danabol_bot" target="_blank"
+              >https://t.me/danabol_bot</a
+            >
+          </div>
+        </div>
+
+        <div class="modal__methods">
+          <div class="modal__method">
+            <img src="./img/card-visa.png" alt="Visa/Mastercard" />
+          </div>
+          <div class="modal__method">
+            <img src="./img/sber.png" alt="Sber" />
+          </div>
+          <div class="modal__method">
+            <img src="./img/alfa.png" alt="Alfa" />
+          </div>
+          <div class="modal__method">
+            <img src="./img/raif.png" alt="Raif" />
+          </div>
+        </div>
+
+        <div class="modal__field">
+          <label class="modal__label">Сумма пополнения</label>
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Введите сумму от 3500 руб."
+          />
+        </div>
+
+        <button class="modal__submit">Запрос карты</button>
+
+        <button class="modal__back">Назад</button>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
