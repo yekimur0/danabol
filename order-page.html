@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/vars.css">
+  <link rel="stylesheet" href="./css/settings.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Оформление заказа — DanabolClub</title>
+</head>
+<body>
+
+  <!-- Хлебные крошки -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--current">
+          <span>Оформление заказа</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <section class="section-order">
+    <div class="container">
+      <h1>Оформление заказа</h1>
+
+      <div class="section-order__block">
+        <div class="section-order__items">
+          <div class="section-order__item">
+            <div class="left">
+                <div class="photo">
+                <img src="./img/gensant.jpg" alt="">
+              </div>
+              <div class="title">Гексанат-100 Росфарм 10ml|100mg Флакон</div>
+            </div>
+            <div class="right">
+              <div class="counter">
+                <div class="counter-btn minus">-</div>
+                <input type="text" class="counter-num" value="1">
+                <div class="counter-btn plus">+</div>
+              </div>
+              <div class="price">
+                <div class="price-small">1 500₽</div>
+                <div class="price-bold">3 000₽</div>
+              </div>
+            </div>
+          </div>
+           <div class="section-order__item">
+            <div class="left">
+                <div class="photo">
+                <img src="./img/gensant.jpg" alt="">
+              </div>
+              <div class="title">Гексанат-100 Росфарм 10ml|100mg Флакон</div>
+            </div>
+            <div class="right">
+              <div class="counter">
+                <div class="counter-btn minus">-</div>
+                <input type="text" class="counter-num" value="1">
+                <div class="counter-btn plus">+</div>
+              </div>
+              <div class="price">
+                <div class="price-small">1 500₽</div>
+                <div class="price-bold">3 000₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-order__info">
+          <p>
+            <span>Сумма</span>
+            <b>6 000₽</b>
+          </p>
+          <p>
+            <span>Страховка (3%)</span>
+            <b>35₽</b>
+          </p>
+          <p>
+            <span>Почта России</span>
+            <b>1 000₽</b>
+          </p>
+
+          <div class="promo">
+            <span>Купон на скидку</span>
+            <input type="text" class="promo-field" placeholder="Ввести промокод">
+          </div>
+
+          <div class="total">
+            <div class="total-title">Итого к оплате</div>
+            <div class="total-num">7 035₽</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-order__block">
+        <div class="section-order__block-head">
+          <div class="section-order__block-title">Новый покупатель</div>
+          <button class="section-order__block-btn">Я зарегистрирован</button>
+        </div>
+
+        <div class="section-order__fields">
+          <div class="section-order__field">
+            <label for="">E-mail</label>
+            <input type="text" placeholder="Введите ваш E-mail">
+          </div>
+          <div class="section-order__field">
+            <label for="">Пароль</label>
+            <input type="password" placeholder="Придумайте пароль">
+          </div>
+           <div class="section-order__field">
+            <label for="">Telegram</label>
+            <input type="text" placeholder="@логин или номер телефона">
+          </div>
+        </div>
+      </div>
+
+      <div class="section-order__block">
+        <div class="section-order__block-head">
+          <div class="section-order__block-title">Адрес доставки</div>
+        </div>
+
+        <div class="section-order__fields">
+          <div class="section-order__field">
+            <label for="">Имя</label>
+            <input type="text" placeholder="Введите Ваше имя">
+          </div>
+          <div class="section-order__field">
+            <label for="">Фамилия</label>
+            <input type="password" placeholder="Введите Вашу фамилию">
+          </div>
+           <div class="section-order__field">
+            <label for="">Страна</label>
+            <input type="text" placeholder="Российская Федерация">
+          </div>
+        </div>
+
+        <div class="section-order__fields section-order__fields--index">
+          <div class="section-order__field">
+            <label for="">Индекс</label>
+            <input type="text" placeholder="234455">
+          </div>
+          <button class="btn-search">Найти отделения</button>
+          <p>Город и адрес доставки автоматически определяется по индексу. Доставка осуществляется до востребования в отделение Почты РФ.</p>
+        </div>
+
+        <div class="section-order__fields">
+        <div class="section-order__field">
+          <label for="">Регион</label>
+          <input type="text" placeholder="Укажите индекс">
+        </div>
+        <div class="section-order__field">
+          <label for="">Населенный пункт</label>
+          <input type="password" placeholder="Укажите индекс">
+        </div>
+          <div class="section-order__field">
+          <label for="">Адрес отделения</label>
+          <input type="text" placeholder="Укажите индекс">
+        </div>
+      </div>
+
+
+
+      </div>
+
+      <div class="section-order__wrapper">
+        <div class="section-order__block section-order__block-del">
+          <div class="section-order__block-head">
+            <div class="section-order__block-title">Способ доставки</div>
+          </div>
+          <div class="section-order__block-del-content">
+            <input type="checkbox">
+            <div class="title">
+              Почта России
+              <div class="price">1 290₽</div>
+            </div>
+            <p>
+              <b>Внимание! Важная информация!</b> <br/> Посылка хранится на почте 14 дней после прибытия. Совершая заказ, вы обязуетесь получить посылку в течении этого времени! По истечении этого срока посылка возвращается обратно и мы не сможем ее перевыслать!
+            </p>
+          </div>
+        </div>
+        <div class="section-order__block">
+          <div class="section-order__block-head">
+            <div class="section-order__block-title">Способ оплаты</div>
+          </div>
+          <div class="section-order__block-del-content">
+            <input type="checkbox">
+            <div class="title">Оплата с баланса</div>
+            <p>
+              Пополнить баланс можно любой картой РФ банка
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-order__block">
+        <div class="section-order__block-head">
+          <div class="section-order__block-title">Комментарии</div>
+        </div>
+
+        <div class="section-order__fields">
+          <div class="section-order__field">
+            <textarea placeholder="Введите текст..."></textarea>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="section-order__bottom">
+        <div class="acception">
+          <input type="checkbox">
+          <span>Я прочитал и согласен с правилами <a href="">Условия заказа</a> </span>
+        </div>
+
+        <button class="btn">Оформить заказ</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
+</body>
+</html>

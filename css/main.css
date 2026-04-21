@@ -1,5 +1,6 @@
 @import "./components/account.css";
 @import "./components/checkout.css";
+@import "./components/order-page.css";
 
 /* ===== BREADCRUMBS ===== */
 .breadcrumbs {

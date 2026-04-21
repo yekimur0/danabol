@@ -90,18 +90,24 @@
 }
 
 .order-accordion__content {
-  max-height: 0;
   overflow: hidden;
   background: #fff;
   border: 1px solid rgba(142, 192, 237, 0.1);
   border-top: none;
   border-radius: 0 0 20px 20px;
   background: rgba(142, 192, 237, 0.1);
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: .3s ease;
 }
 
 .order-accordion.is-active .order-accordion__content {
-  max-height: 1000px;
+  grid-template-rows: 1fr;
   padding: 30px;
+}
+
+.order-bottom {
+  overflow: hidden;
 }
 
 /* Order Items */
